@@ -19,8 +19,8 @@ public class PersonDao {
 		em.persist(person);
 	}
 	
-	public Person getPerson(int id) {
-		Person person=em.find(Person.class, id);
+	public Person getPerson(int personId) {
+		Person person=em.find(Person.class, personId);
 		return person;
 	}
 	
